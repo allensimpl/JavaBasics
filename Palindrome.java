@@ -1,11 +1,11 @@
 public class Palindrome {
     public static void main(String[] args){
-        String x = "malayalam";
+        final String TEST_PAL_STRING = "malayalam";
         int i=0;
-        int j=x.length()-1;
+        int j=TEST_PAL_STRING.length()-1;
         int pal = 1;
         while(i<=j){
-            if(x.charAt(i)!=x.charAt(j)){
+            if(TEST_PAL_STRING.charAt(i)!=TEST_PAL_STRING.charAt(j)){
                 pal=0;
                 break;
             }

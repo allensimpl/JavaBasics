@@ -1,11 +1,14 @@
 public class CountPrime {
     public static void main(String[] args){
-        int[] a = {9,11,2,7,12,3};
+        final int[]  TEST_DIGITS = {3,11,2,7,12,3};
         int count=0;
-        for(int i:a){
+        for(int element:TEST_DIGITS){
             int flag=1;
-            for(int j=2;j<=(i/2);j++){
-                if(i%j==0) {
+            if(element==0||element==1){
+                continue;
+            }
+            for(int j=2;j<=(element/2);j++){
+                if(element%j==0) {
                     flag = 0;
                 }
             }
