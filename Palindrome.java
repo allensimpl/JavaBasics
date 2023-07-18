@@ -1,6 +1,9 @@
 public class Palindrome {
+    private final static String TEST_PAL_STRING = "malayalam";
     public static void main(String[] args){
-        final String TEST_PAL_STRING = "malayalam";
+        palindromeChecker(TEST_PAL_STRING);
+    }
+    public static void palindromeChecker(String TEST_PAL_STRING){
         int i=0;
         int j=TEST_PAL_STRING.length()-1;
         int pal = 1;
@@ -17,5 +20,6 @@ public class Palindrome {
         }else{
             System.out.println("It's not a Palindrome");
         }
+
     }
 }

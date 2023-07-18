@@ -1,6 +1,9 @@
 public class CountPrime {
+    private final static int[]  TEST_DIGITS = {3,11,2,7,12,3};
     public static void main(String[] args){
-        final int[]  TEST_DIGITS = {3,11,2,7,12,3};
+        primeChecker(TEST_DIGITS);
+    }
+    public static void primeChecker(int[] TEST_DIGITS){
         int count=0;
         for(int element:TEST_DIGITS){
             int flag=1;
